@@ -1,3 +1,4 @@
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './styles/index.css'
@@ -12,7 +13,7 @@ import ItemDetail from './pages/ItemDetail.jsx'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename="/webdev-auth-lab-Ulishchenkoo">
             <Routes>
                 <Route path="" element={<Layout />}>
                     <Route index element={<ItemsList />} />
